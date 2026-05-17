@@ -11,6 +11,14 @@ inference_data:
   type: pandas.ParquetDataset
   filepath: data/01_raw/bike_data_inference.parquet
 
+inference_batch:
+  type: pandas.ParquetDataset
+  filepath: data/03_primary/inference_batch.parquet
+
 features:
   type: pandas.ParquetDataset
-  filepath: data/04_ifeatures/features.parquet
+  filepath: data/04_features/features.parquet
+
+predictions_with_timestamps:
+  type: pandas.ParquetDataset
+  filepath: data/07_model_output/predictions.parquet
